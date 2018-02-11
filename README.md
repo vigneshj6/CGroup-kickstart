@@ -38,7 +38,13 @@ To get to know about cgroup
         also reset the expired flag):
 
                 chroot /var/lib/lxc/centos-sample/rootfs passwd
-
-
     ```
-
+  * Starting the container by ``` sudo lxc-start -n container_name ```
+    * sudo lxc-start -n centos-sample
+  * Bind to containers console by ``` sudo lxc-console -n container_name ```
+    * sudo lxc-console -n centos-sample
+    ``` Login to the container with default credentials. ```
+## Installing CGroup
+  * yum install libcgroup
+  ``` [root@centos-sample ~]# yum install libcgroup  ```
+  
